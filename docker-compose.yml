@@ -1,0 +1,29 @@
+services:
+  spinoza-db:
+    image: postgres:16-alpine
+    container_name: spinoza-db
+    environment:
+      POSTGRES_DB: spinoza
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+    volumes:
+      - spinoza_db_data:/var/lib/postgresql/data
+
+  spinoza:
+    build:
+      context: .
+      dockerfile: spinoza/Dockerfile
+    container_name: spinoza
+    ports:
+      - "5004:5004"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:5004
+      SPINOZA_CONNECTION: Host=spinoza-db;Port=5432;Database=spinoza;Username=postgres;Password=postgres
+    depends_on:
+      - spinoza-db
+
+volumes:
+  spinoza_db_data:
