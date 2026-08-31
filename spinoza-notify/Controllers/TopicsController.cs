@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Spinoza.Data;
 using Spinoza.Models;
 using System.Text.Json;
+using Npgsql;
 
 namespace Spinoza.Controllers;
 
