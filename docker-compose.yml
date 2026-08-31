@@ -16,11 +16,11 @@ services:
     volumes:
       - spinoza_db_data:/var/lib/postgresql/data
 
-  spinoza:
+  spinoza-notify:
     build:
       context: .
       dockerfile: spinoza-notify/Dockerfile
-    container_name: spinoza
+    container_name: spinoza-notify
     ports:
       - "5005:5005"
     environment:
