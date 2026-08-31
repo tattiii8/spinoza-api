@@ -8,6 +8,11 @@ services:
       POSTGRES_PASSWORD: postgres
     ports:
       - "5464:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d spinoza"]
+      interval: 2s
+      timeout: 3s
+      retries: 10
     volumes:
       - spinoza_db_data:/var/lib/postgresql/data
 
@@ -21,9 +26,10 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://0.0.0.0:5005
-      ConnectionStrings__DefaultConnection: Host=spinoza-db;Port=5432;Database=spinoza;Username=postgres;Password=postgres
+      ConnectionStrings__SpinozaConnection: Host=spinoza-db;Port=5432;Database=spinoza;Username=postgres;Password=postgres
     depends_on:
-      - spinoza-db
+      spinoza-db:
+        condition: service_healthy
 
 volumes:
   spinoza_db_data:
