@@ -19,7 +19,14 @@ builder.Services.AddHostedService(sp => sp.GetRequiredService<EventDispatcher>()
 var app = builder.Build();
 
 app.UseSwagger();
-app.UseSwaggerUI();
+
+app.UseSwaggerUI(options =>
+{
+    options.RoutePrefix = "api/notify/swagger";
+    options.SwaggerEndpoint(
+        "/swagger/v1/swagger.json",
+        "Spinoza API v1");
+});
 
 // Intentionally NO authentication/authorization middleware.
 app.MapControllers();

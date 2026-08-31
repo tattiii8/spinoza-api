@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GRMTkVukkZM=",
+  "dgSpecHash": "gZ0d8ch8Twc=",
   "success": true,
-  "projectFilePath": "/Users/tatsuki/Desktop/spinoza-api/spinoza/spinoza.csproj",
+  "projectFilePath": "/Users/tatsuki/Desktop/spinoza-api/spinoza-notify/spinoza-notify.csproj",
   "expectedPackageFiles": [
     "/Users/tatsuki/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",
     "/Users/tatsuki/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",

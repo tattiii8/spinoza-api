@@ -702,11 +702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tatsuki/Desktop/spinoza-api/spinoza/spinoza.csproj",
-      "projectName": "spinoza",
-      "projectPath": "/Users/tatsuki/Desktop/spinoza-api/spinoza/spinoza.csproj",
+      "projectUniqueName": "/Users/tatsuki/Desktop/spinoza-api/spinoza-notify/spinoza-notify.csproj",
+      "projectName": "spinoza-notify",
+      "projectPath": "/Users/tatsuki/Desktop/spinoza-api/spinoza-notify/spinoza-notify.csproj",
       "packagesPath": "/Users/tatsuki/.nuget/packages/",
-      "outputPath": "/Users/tatsuki/Desktop/spinoza-api/spinoza/obj/",
+      "outputPath": "/Users/tatsuki/Desktop/spinoza-api/spinoza-notify/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tatsuki/.nuget/NuGet/NuGet.Config"
