@@ -9,8 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var connectionString =
-    builder.Configuration.GetConnectionString("SpinozaConnection")
-    ?? Environment.GetEnvironmentVariable("SPINOZA_CONNECTION")
+    builder.Configuration.GetConnectionString("DefaultConnection")
     ?? "Host=localhost;Port=5432;Database=spinoza;Username=postgres;Password=postgres";
 
 builder.Services.AddSingleton(new DbConnectionFactory(connectionString));
