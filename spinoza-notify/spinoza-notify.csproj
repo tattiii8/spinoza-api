@@ -12,5 +12,6 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
     <PackageReference Include="MailKit" Version="4.14.1" />
+    <ProjectReference Include="../spinoza-shared/spinoza-shared.csproj" />
   </ItemGroup>
 </Project>

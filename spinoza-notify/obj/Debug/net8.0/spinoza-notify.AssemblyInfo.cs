@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("spinoza-notify")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+713690aeead778f0f32b5af65317ebbe8296d6e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c033196189fa026d2c604bd950eda029bc2f3fed")]
 [assembly: System.Reflection.AssemblyProductAttribute("spinoza-notify")]
 [assembly: System.Reflection.AssemblyTitleAttribute("spinoza-notify")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
